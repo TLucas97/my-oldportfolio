@@ -8,10 +8,64 @@
     scroll-behavior: smooth;
 }
 
+#core{
+    width: 70px;
+}
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.animation-header{
+    position: absolute;
+    transform: translate(-50% -50%);
+    color: #ffffff;
+}
+
+.animation{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.animation.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.animation.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
 #header{
     width: 100%;
-    background: #b6293c;
+    background: black;
     height: 70px;
+    opacity: .9;
+}
+
+#profile{
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-bottom: 1em;
 }
 
 .logo{
@@ -36,6 +90,7 @@
     margin-left: 1em;
     margin-right: 1em;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 #nav-bar li a{
@@ -48,7 +103,7 @@
 }
 
 #nav-bar li a:hover{
-    color: black;
+    color: gray;
 }
 
 #title-1{
@@ -66,10 +121,6 @@
     background-size: cover;
     background-position: left;
     height: 900px;
-}
-
-#title-1 h1{
-    
 }
 
 #img{
@@ -100,13 +151,14 @@
     background-color: #324163;
     height: 1000px;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .container-1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     margin-top: 4em;
 }
 
@@ -115,10 +167,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid rgba(0, 0, 0, 0.548);
-    box-shadow: 1px 1px 10px 2px;
     transition: .3s;
-    cursor:pointer
+    cursor:pointer;
+    width: 200px;
 }
 
 .box1:hover{
@@ -128,17 +179,26 @@
 .description-1{
     font-size: 1.3rem;
     letter-spacing: 1.5px;
-    background: white;
+    background: rgb(0, 0, 0);
+    color: white;
     width: 100%;
     text-align: center;
-    padding: 10px 0px;
+    padding: 7px 0px;
     opacity: .7;
     font-weight: bold;
+    border: 5px solid black;
+    width: 250px;
 }
 
 .pizza{
-    width: 550px;
+    width: 500px;
     height: 300px;
+    border: 15px solid rgba(0, 0, 0, 0.664);
+    transition: .3s;
+}
+
+.pizza:hover{
+    border: 15px solid rgba(255, 255, 255, 0.664);
 }
 
 #section-3{
@@ -168,7 +228,7 @@
 
 .logo1{
     margin-top: 7em;
-    width: 180px;
+    width: 120px;
 }
 
 .h2{
@@ -255,18 +315,22 @@
     transition: .5s;
 }
 
-.go-back:hover{
-    letter-spacing: 2px;
+#footer{
+    display: flex;
+}
+
+#footer p{
+    padding: 0px 400px;
+    opacity: .4;
 }
 
 @media (max-width: 1700px){
     .container-1{
         flex-wrap: wrap;
-        margin-top: 1em;
     }
 
-    .project-1{
-        margin-bottom: 1em;
+    .description-1{
+        margin-bottom: 2em;
     }
 
     #section-2{
@@ -274,9 +338,29 @@
     }
 }
 
+@media (max-width: 1500px){
+    #section-2{
+        display: flex;
+        flex-direction: column;
+        height: 2600px;
+    }
+
+    .container-1{
+        flex-direction: column;
+    }
+
+    #footer{
+        display: none;
+    }
+}
+
 @media (max-width: 1200px){
     #section-2{
-        height: 2400px
+        height: 2600px
+    }
+
+    #footer{
+        display: none;
     }
 }
 
@@ -287,6 +371,10 @@
 
     #section-3{
         height: 1200px
+    }
+
+    #section-2{
+        height: 2600px;
     }
 }
 
@@ -305,7 +393,7 @@
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     #title-1 h1{
         font-size: 1.7rem;
     }
@@ -355,13 +443,19 @@
     }
 
     #section-2{
-        height: 1900px
+        height: 2000px
+    }
+
+    #social{
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width: 460px){
     #social{
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     .pizza{
@@ -369,7 +463,14 @@
         height: 100px;
     }
 
+    #title-1 h1{
+        text-align: center;
+    }
 
+    .social_logo{
+        width: 65px;
+        margin-bottom: 5px;
+    }
 
     .h2 h4{
         font-size: 2rem;
@@ -377,6 +478,27 @@
 
     #section-3{
         height: 600px
+    }
+
+    #tecnologias{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tecnos{
+        width: 100px;
+    }
+
+    #section-3{
+        height: 700px;
+    }
+
+    #section-2{
+        height: 1200px;
+    }
+
+    #header{
+        height: 170px;
     }
 }
 
@@ -390,5 +512,9 @@
     .h2 h4{
         font-size: 25px;
         margin-top: 1em;
+    }
+
+    #section-2{
+        height: 1400px;
     }
 }

@@ -9,7 +9,7 @@
 }
 
 #core{
-    width: 70px;
+    width: 90px;
 }
 
 .intro{
@@ -40,6 +40,7 @@
     display: inline-block;
     bottom: -20px;
     opacity: 0;
+    color: rgba(255, 255, 255, 0.63);
 }
 
 .animation.active{

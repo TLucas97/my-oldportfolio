@@ -420,7 +420,7 @@
     }
 
     #header{
-        height: 120px
+        height: 180px
     }
 
     #nav-bar ul{
@@ -428,6 +428,7 @@
         justify-content: center;
         align-items: center;
         margin-right: 0;
+        margin-top: .5em;
     }
 
     #nav-bar li{

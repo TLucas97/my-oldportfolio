@@ -59,14 +59,14 @@
     width: 100%;
     background: black;
     height: 70px;
-    opacity: .9;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #profile{
-    width: 120px;
-    border-radius: 50%;
-    border: 5px solid black;
-    margin-bottom: 1em;
+    width: 900px;
 }
 
 .logo{
@@ -75,15 +75,14 @@
 
 #nav-bar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 #nav-bar ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    margin-right: 4em;
 }
 
 #nav-bar li{
@@ -97,7 +96,7 @@
 #nav-bar li a{
     font-size: 1.6rem;
     list-style: none;
-    font-weight: 500;
+    font-weight: bold;
     color: white;
     text-decoration: none;
     transition: .3s;
@@ -107,21 +106,26 @@
     color: gray;
 }
 
+#section-1{
+    background: rgba(153, 153, 153, 0.562);
+}
+
 #title-1{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    color: white;
-    font-size: 2.5rem;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: .2em;
-
-    background: url(/img/bg.jpg);
-    background-size: cover;
-    background-position: left;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
     height: 900px;
+}
+
+#h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
 }
 
 #img{
@@ -355,6 +359,12 @@
     }
 }
 
+@media (max-width: 1370px){
+    #profile{
+        width: 600px;
+    }
+}   
+
 @media (max-width: 1200px){
     #section-2{
         height: 2600px
@@ -365,7 +375,7 @@
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 920px){
     #tecnologias{
         flex-wrap: wrap;
     }
@@ -376,6 +386,14 @@
 
     #section-2{
         height: 2600px;
+    }
+
+    #h1{
+        flex-direction: column;
+    }
+
+    #h1 h2{
+        text-align: center;
     }
 }
 
@@ -440,16 +458,20 @@
         align-items: center;
     }
 
-    .logo{
-        display: none;
-    }
-
     #section-2{
         height: 2000px
     }
 
     #social{
         flex-wrap: wrap;
+    }
+
+    #h1 h2{
+        font-size: 30px;
+    }
+
+    #profile{
+        width: 450px;
     }
 }
 
@@ -502,6 +524,14 @@
     #header{
         height: 190px;
     }
+
+    #h1 h2{
+        font-size: 25px;
+    }
+
+    #profile{
+        width: 350px;
+    }
 }
 
 @media (max-width: 420px){
@@ -518,5 +548,9 @@
 
     #section-2{
         height: 1400px;
+    }
+
+    #profile{
+        width: 250px;
     }
 }

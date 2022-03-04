@@ -4,107 +4,197 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tarcisio - Portfolio</title>
+    <link rel="icon" href="./assets/img/heart.png">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <title>Lucas-Portfolio</title>
 </head>
 <body>
-    <div class="intro">
-        <h1 class="animation-header">
-            <span class="animation">Seja bem vindo</span> <br>
-            <span class="animation">Ao meu portfólio 
-            <span class="animation"><img src="https://cdn-icons-png.flaticon.com/512/2728/2728279.png" alt="heart" id="core"></span></span> <br> <br>
-            <span class="animation"><img src="./img/pull-down.png" alt="heart" id="core"></span></span>
-        </h1>
-    </div>
-    <header id="header">
-        <nav id="nav-bar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#section-2">Projetos</a></li> 
-                <li><a href="#section-3">Skills</a></li> 
-                <li><a href="#section-4">Contato</a></li> 
+    <header style="padding-top: 1.5em" id="header">
+        <div style="margin-left: 4em">
+            <h1>Portfolio</h1>
+        </div>
+        <div style="margin-right: 4em">
+            <ul class="header-list">
+                <li> 
+                <a href="#inicio">
+                    Início
+                </a> 
+                </li>
+                <li> 
+                    <a href="#sobre">
+                        Sobre
+                    </a> 
+                </li>
+                <li> 
+                    <a href="#skills">
+                        Skills
+                    </a> 
+                </li>
+                <li> 
+                <a href="#contato">
+                    Contato
+                </a> 
+                </li>
             </ul>
-        </nav>
+        </div>
     </header>
-
-    <section id="section-1">
-    <div id="title-1">
-        <div id="h1">
-            <h2>Tarcísio Almeida <br>
-                Desenvolvedor Front-end
-            </h2>
-            <img src="./img/coding.png" alt="profile" id="profile">
+    <section class="sessao-1">
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/921/921002.png" alt="guy" width="300" style="border-radius: 50%; border: 8px solid rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
         </div>
-        <a href="#section-2"><img src="/img/arrow-down.png" alt="arrow" class="arrow"></a>
-    </div>
-    </section>
-
-    <section id="section-2">
-        <h1>Meus projetos</h1>
-
-        <div class="container-1">
-            <div class="box1">
-                <div class="project-1"><a href="https://github.com/TLucas97/Pizza-Time-Project" target="blank_"><img src="/img/pizza-project.jpg" alt="pizza" class="pizza"></a></div>
-                <div class="description-1"><p>Aplicação de Pizzaria</p></div>
-            </div>
-            <div class="box1">
-                <div class="project-1"><a href="https://github.com/TLucas97/clima-weather-app" target="blank_"><img src="/img/weather-project.jpg" alt="pizza" class="pizza"></a></div>
-                <div class="description-1"><p>Aplicação de Clima</p></div>
-            </div>
-            <div class="box1">
-                <div class="project-1"><a href="https://github.com/TLucas97/Urna-Customizada" target="blank_"></a><img src="/img/urna-project.jpg" alt="pizza" class="pizza"></a></div>
-                <div class="description-1"><p>Urna Eletrônica</p></div>
-            </div>
+        <div style="text-align: center;">
+            <h1>Olá, eu sou o Lucas</h1>
+            <h2>Desenvolvedor Front-end</h2>
         </div>
-
-        <div class="container-1">
-            <div class="box1">
-                <div class="project-1"><a href="https://github.com/TLucas97/Personal-Trainer-Landing-Page" target="blank_"><img src="/img/gym.jpg" alt="pizza" class="pizza"></a></div>
-                <div class="description-1"><p>Landing Page</p></div>
-            </div>
-            <div class="box1">
-                <div class="project-1"><a href="https://github.com/TLucas97/Pagina-inicial---orCult" target="blank_"><img src="/img/orcult-project.jpg" alt="pizza" class="pizza"></a></div>
-                <div class="description-1"><p>Projeto orCult</p></div>
-            </div>
-            <div class="box1">
-                <div class="project-1"><a href="https://github.com/TLucas97/NeyPlus-Homepage" target="blank_" ><img src="/img/ney.jpg" alt="pizza" class="pizza"></a></div>
-                <div class="description-1"><p>Projeto Ney+</p></div>
-            </div>
+        <div style="margin-top: 3em">
+            <a target="_blank" href="https://www.linkedin.com/in/tarc%C3%ADsio-almeida-0a5577207/">
+                <button class="linkedin">Linkedin</button> 
+            </a>
+            <a target="_blank" href="https://github.com/TLucas97">
+                <button class="github">Github</button> 
+            </a>
+        </div>
+        <div style="margin-top: 3em;">
+            <button class="projetos">Projetos</button>
         </div>
     </section>
-
-    <section id="section-3">
-    <div class="h2">
-        <h4>Tecnologias que uso</h4>
-        <img src="/img/curve-down-arrow.png" alt="curve" class="curve">
-    </div>
-        <div id="tecnologias">
-            <div class="tecnos"><img src="/img/html.png" alt="" class="logo1"></div>
-            <div class="tecnos"><img src="/img/css-3.png" alt="" class="logo1"></div>
-            <div class="tecnos"><img src="/img/js.png" alt="" class="logo1"></div>
-            <div class="tecnos"><img src="/img/letra-v.png" alt="" class="logo1"></div>
-            <div class="tecnos"><img src="/img/sass.png" alt="" class="logo1"></div>
+    <section class="sessao-2">
+        <div style="margin-bottom: 8em">
+            <h1>Ética de trabalho</h1>
+        </div>
+        <div class="width-alignment">
+            <div class="ethic-align" style="margin-bottom: 10em;">
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="" width="160">
+                    </div>
+                    <div style="text-align: center;">
+                        <h2>Aprendizagem</h2>
+                        <p style="padding-top: 1em;">A aprendizagem é uma bússola <br> que nos guia numa evolução <br> contínua.</p>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                    <div>
+                        <img src="https://cdn-icons.flaticon.com/png/512/4115/premium/4115695.png?token=exp=1646391540~hmac=d694796bd2bba15859d64a26587c2880" alt="" width="160">
+                    </div>
+                    <div style="text-align: center;">
+                        <h2>Cooperação</h2>
+                        <p style="padding-top: 1em;">Se quer ir rápido vá sozinho. <br> Se quer ir longe vá em grupo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ethic-align">
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                    <div>
+                        <img src="https://cdn-icons.flaticon.com/png/512/1048/premium/1048953.png?token=exp=1646391582~hmac=90163142fe6ba28ba005390b817c0481" alt="" width="160">
+                    </div>
+                    <div style="text-align: center;">
+                        <h2>Comprometimento</h2>
+                        <p style="padding-top: 1em;">É o grau de comprometimento que <br> determina o sucesso.</p>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/6929/6929574.png" alt="" width="160">
+                    </div>
+                    <div id="sobre" style="text-align: center;">
+                        <h2>Criatividade</h2>
+                        <p style="padding-top: 1em;">A criatividade é a inspiração <br> da inovação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; background-color: rgba(0, 0, 0, 0.39); height: 2px; margin-top: 5em;">.</div>
+    </section>
+    <section class="sessao-3">
+        <div style="max-width: 1100px; margin: 0 auto; display: flex;">
+            <div>
+                <img src="https://static-exp1.licdn.com/sc/h/d58zfe6h3ycgq5l1ccjpkrtdn" width="500">
+            </div>
+            <div style="margin-left: 7em;">
+                <h2>Sobre mim</h2>
+                <p style="margin-bottom: 1.6em;">
+                    Atualmente trabalhando como Desenvolvedor Front-end, aprendendo todos os dias e sempre buscando novos desafios com muito entusiasmo!
+                </p>
+                <p style="margin-bottom: 1.6em;">
+                    Sempre tive um olhar de curiosidade para novidades, isso me permitiu alcançar fluência na língua inglesa e ingressar no mundo da programação.
+                </p>
+                <p>
+                    Me mantenho focado, aperfeiçando cada vez mais minhas habilidades para tornar cada vez mais efetivo a minha capacidade de resolver problemas.
+                </p>
+            </div>
+        </div>
+        <div style="width: 100%; background-color: rgba(0, 0, 0, 0.39); height: 2px; margin-top: 3em;">.</div>
+    </section>
+    <section class="sessao-4" id="skills">
+        <h1>Skills</h1>
+        <div class="skills">
+            <div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" width="140"></div>
+            <div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width="140"></div>
+            <div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width="140"></div>
+            <div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" width="140"></div>
+        </div>
+        <div class="skills">
+            <div><img class="opacity-hover" src="https://seeklogo.com/images/V/vuejs-logo-17D586B587-seeklogo.com.png" width="140"></div>
+            <div><img class="opacity-hover" src="https://seeklogo.com/images/N/nuxt-logo-D5098E139E-seeklogo.com.png" width="140"></div>
+            <div><img class="opacity-hover" src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" width="100"></div>
+            <div><img class="opacity-hover" src="https://seeklogo.com/images/S/sass-logo-E41E7734A8-seeklogo.com.png" width="140"></div>
         </div>
     </section>
-
-    <section id="section-4">
-        <div id="anuncio">
-            <h1>Vamos trabalhar juntos?</h1>
-            <p>Entre em contato para mais detalhes</p>
-            <div id="social">
-                <div class="sociais"><a href="https://github.com/TLucas97" target="blank_"><img src="/img/github.png" alt="social" class="social_logo"></a></div>
-                <div class="sociais"><a href="https://www.linkedin.com/in/tarc%C3%ADsio-almeida-0a5577207/"  target="blank_"><img src="/img/linkedin.png" alt="social" class="social_logo"></a></div>
-                <div class="sociais"><a href="https://api.whatsapp.com/send?phone=5591989176415&text=Tenho%20interesse%20em%20contratar%20seus%20servi%C3%A7os!" target="blank_" ><img src="/img/whatsapp.png" alt="social" class="social_logo"></a></div>
-                <div class="sociais"><a href="mailto:tarcisio.almeida197@gmail.com"><img src="/img/cv.png" alt="social" class="social_logo"></a></div>
-                <div class="sociais"><a href="#header"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="social" class="social_logo"></a></div>
-            </div>
-            <div id="footer">
-                <p>@tarcisio.dev</p>
-                <p>©Tarcisio 2021</p>
+    <div style="width: 100%; background-color: rgba(0, 0, 0, 0.39); height: 2px; margin-top: 3em;">.</div>
+    <section class="sessao-5" id="contato">
+        <h1>Contato</h1>
+        <div style="display: flex; justify-content: center; margin-top: 2em;">
+            <div class="contact">
+                <h2>Vamos trabalhar juntos?</h2>
+                <p>Entre em contato para mais detalhes</p>
+                <div style="display: flex; justify-content: space-around; padding-top: 5em; max-width: 400px; margin: 0 auto;">
+                    <div>
+                        <a href="#">
+                            <img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/145/145807.png" width="60">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" width="60">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img class="opacity-hover" src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670051.png?token=exp=1646396952~hmac=f261defa27099a8aaa86d6bda5cf9603" width="60">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img class="opacity-hover" src="https://cdn-icons.flaticon.com/png/512/3178/premium/3178158.png?token=exp=1646396969~hmac=def41a8c7c2eba3bfc04bb26875fcd65" width="60">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
-<script src="animation.js"></script>
+    <footer>
+        <div class="footer-adjust">
+            <div class="footer-margin" style="display: flex; flex-direction: column;">
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" width="20"> Belém-PA
+                </a>
+                <a href="#">
+                    +55 (91) 98917-6415
+                </a>
+                <a href="#">
+                    <img src="https://cdn-icons.flaticon.com/png/512/2374/premium/2374449.png?token=exp=1646397346~hmac=7a62060587fdae7ff2ff7c98f35aa168" width="30"> E-mail
+                </a>
+            </div>
+            <div class="footer-margin" style="display: flex; align-items: center; flex-direction: column">
+                <p style="margin-bottom: 1em;">© Todos os direitos reservados | Copyright - 2022</p>
+                <div>
+                    <a href="#header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" width="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

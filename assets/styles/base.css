@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #24253e;
+  background: -webkit-gradient(linear, left top, right top, color-stop(12%, #24253e), color-stop(81%, #141331));
+  background: linear-gradient(90deg, #24253e 12%, #141331 81%);
+}
+
+header {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+header .header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-list li {
+  margin: 0px 1em;
+}
+
+header .header-list li::before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+header .header-list li:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+header .header-list li::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: white;
+  z-index: -1;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+header .header-list li {
+  position: relative;
+}
+
+header .header-list a:hover {
+  color: black;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.sessao-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5em;
+}
+
+.sessao-1 h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 100;
+}
+
+.sessao-1 h2 {
+  font-size: 1.75rem;
+  color: #5AC6C0;
+}
+
+.sessao-1 button {
+  width: 135px;
+  height: 50px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  margin: 0px 1.6em;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border: 2px solid white;
+}
+
+.linkedin {
+  background: #006eeb48;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.github {
+  background: #0d11178a;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.projetos {
+  background-color: #FB2434;
+  color: white;
+}
+
+.linkedin:hover {
+  background: #006CEB;
+}
+
+.github:hover {
+  background: white;
+  color: black;
+}
+
+.sessao-2 {
+  margin-top: 9em;
+}
+
+.sessao-2 h1 {
+  font-size: 2rem;
+  color: #5AC6C0;
+  text-align: center;
+}
+
+.sessao-2 h2 {
+  color: white;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.sessao-2 p {
+  color: white;
+}
+
+.width-alignment {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ethic-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sessao-3 {
+  margin-top: 5em;
+}
+
+.sessao-3 h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.sessao-3 p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.sessao-3 h2, .sessao-3 p {
+  color: white;
+}
+
+.sessao-4 {
+  padding-top: 5em;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.sessao-4 h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #5AC6C0;
+}
+
+.sessao-4 .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 7em 0em;
+}
+
+.opacity-hover {
+  opacity: .5;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.opacity-hover:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sessao-5 {
+  padding-top: 5em;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.sessao-5 h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #5AC6C0;
+}
+
+.sessao-5 .contact {
+  width: 700px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: #1C2431;
+  margin-bottom: 1em;
+  color: white;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.sessao-5 .contact h2 {
+  padding-top: 1em;
+}
+
+.sessao-5 .contact p {
+  font-size: .9rem;
+}
+
+footer .footer-adjust {
+  background: #0B1523;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-margin {
+  margin: 0em 20em;
+}
+
+footer a, footer p {
+  color: white;
+}
+/*# sourceMappingURL=base.css.map */

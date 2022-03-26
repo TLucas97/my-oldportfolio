@@ -30,6 +30,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
 }
 
 header a {
@@ -102,7 +105,7 @@ header .header-list a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 5em;
+  padding-top: 8em;
 }
 
 .sessao-1 h1 {
@@ -342,6 +345,10 @@ footer a, footer p {
   height: 550px;
 }
 
+.swiper img {
+  border-radius: 10px;
+}
+
 .screen {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,6 +369,7 @@ footer a, footer p {
 .screen h1 {
   color: white;
   margin-bottom: .6em;
+  margin-right: .5em;
 }
 
 .swiper-button-prev {
@@ -376,5 +384,41 @@ footer a, footer p {
 
 .swiper-scrollbar {
   display: none;
+}
+
+@media (max-width: 900px) {
+  .sessao-3 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .teste {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 800px !important;
+  }
+  .margin-left-adjust {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+  }
+  .img-adjust {
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    display: none;
+  }
 }
 /*# sourceMappingURL=base.css.map */

@@ -24,6 +24,9 @@ header{
     color: white;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
     a{
         color: white;
         font-size: 1.5rem;
@@ -72,8 +75,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    margin-top: 5em;
+    padding-top: 8em;
 
     h1{
         font-size: 3rem;
@@ -290,6 +292,9 @@ footer{
   margin-top: 1em;
   width: 1000px;
   height: 550px;
+  img{
+    border-radius: 10px;
+  }
 }
 
     .screen{
@@ -302,6 +307,7 @@ footer{
         h1{
             color: white;
             margin-bottom: .6em;
+            margin-right: .5em;
         }
     }
 
@@ -316,3 +322,33 @@ footer{
     .swiper-scrollbar{
         display: none;
     }
+
+@media (max-width: 900px){
+    .sessao-3{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .teste{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 800px !important;
+    }
+
+    .margin-left-adjust{
+        margin-left: 1em !important;
+        margin-right: 1em !important;
+    }
+
+    .img-adjust{
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 800px){
+    footer{
+        display: none;
+    }
+}

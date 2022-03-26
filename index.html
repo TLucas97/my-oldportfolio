@@ -8,11 +8,109 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./assets/img/heart.png">
     <link rel="stylesheet" href="./assets/styles/base.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./modal/jquery.leanModal.min.js"></script>
     <title>Lucas-Portfolio</title>
 </head>
 <body>
+    <div id="lean_overlay">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <div class="screen">
+                    <div>
+                        <h1>
+                            Urna customizada
+                            <a target="_blank" href="https://github.com/TLucas97/Urna-Customizada">
+                                <img src="./assets/img/github.png" alt="" width="31">
+                            </a>
+                        </h1>
+                      </div>
+                      <div>
+                        <img src="./assets/img/urna.png" width="800" height="390" alt="">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="screen">
+                    <div>
+                        <h1>
+                            Covid Tracker
+                            <a target="_blank" href="https://github.com/TLucas97/covid-tracker">
+                                <img src="./assets/img/github.png" alt="" width="31">
+                            </a>
+                        </h1>
+                      </div>
+                      <div>
+                        <img src="./assets/img/covid-tracker.png" width="800" height="390">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="screen">
+                    <div>
+                        <h1>
+                            Clone Whatsapp Web
+                            <a target="_blank" href="https://github.com/TLucas97/whatsapp-web-layolt">
+                                <img src="./assets/img/github.png" alt="" width="31">
+                            </a>
+                        </h1>
+                      </div>
+                      <div>
+                        <img src="./assets/img/whatsapp-clone.png" width="800" height="390">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="screen">
+                    <div>
+                        <h1>
+                            Projeto orCult
+                            <a target="_blank" href="https://github.com/TLucas97/Pagina-inicial---orCult">
+                                <img src="./assets/img/github.png" alt="" width="31">
+                            </a>
+                        </h1>
+                      </div>
+                      <div>
+                        <img src="./assets/img/orcult.png" width="800" height="390">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="screen">
+                    <div>
+                        <h1>
+                            Sistema de dados de países
+                            <a target="_blank" href="https://github.com/TLucas97/suthub_desafio">
+                                <img src="./assets/img/github.png" alt="" width="31">
+                            </a>
+                        </h1>
+                    </div>
+                      <div>
+                        <img src="./assets/img/data.png" width="800" height="390" alt="">
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+    </div>
     <header style="padding-top: 1.5em" id="header">
         <div style="margin-left: 4em">
             <h1 class="animate__animated animate__fadeIn animate__delay-1s">Portfolio</h1>
@@ -59,7 +157,7 @@
             </a>
         </div>
         <div style="margin-top: 3em;">
-            <button class="projetos">Projetos</button>
+            <button id="trigger_id" class="projetos">Projetos</button>
         </div>
     </section>
     <section class="sessao-2">
@@ -68,7 +166,7 @@
         </div>
         <div class="width-alignment">
             <div class="ethic-align" style="margin-bottom: 10em;">
-                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                <div data-aos="zoom-in" data-aos-duration="1000" style="display: flex; justify-content: center; align-items: center; flex-direction: column">
                     <div>
                         <img src="./assets/img/books.png" alt="" width="160">
                     </div>
@@ -77,7 +175,7 @@
                         <p style="padding-top: 1em;">A aprendizagem é uma bússola <br> que nos guia numa evolução <br> contínua.</p>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                <div data-aos="zoom-in" data-aos-duration="1000" style="display: flex; justify-content: center; align-items: center; flex-direction: column">
                     <div>
                         <img src="./assets/img/coop.png" alt="" width="160">
                     </div>
@@ -87,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ethic-align">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="ethic-align">
                 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
                     <div>
                         <img src="./assets/img/calendar.png" alt="" width="160">
@@ -97,7 +195,7 @@
                         <p style="padding-top: 1em;">É o grau de comprometimento que <br> determina o sucesso.</p>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                <div data-aos="zoom-in" data-aos-duration="1000" style="display: flex; justify-content: center; align-items: center; flex-direction: column">
                     <div>
                         <img src="./assets/img/idea.png" alt="" width="160">
                     </div>
@@ -112,10 +210,10 @@
     </section>
     <section class="sessao-3">
         <div style="max-width: 1100px; margin: 0 auto; display: flex;">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
                 <img src="https://static-exp1.licdn.com/sc/h/d58zfe6h3ycgq5l1ccjpkrtdn" width="500">
             </div>
-            <div style="margin-left: 7em;">
+            <div style="margin-left: 7em;" data-aos="fade-left" data-aos-duration="1000">
                 <h2>Sobre mim</h2>
                 <p style="margin-bottom: 1.6em;">
                     Atualmente trabalhando como Desenvolvedor Front-end, aprendendo todos os dias e sempre buscando novos desafios com muito entusiasmo!
@@ -133,30 +231,30 @@
     <section class="sessao-4" id="skills">
         <h1>Skills</h1>
         <div class="skills">
-            <div class="tooltip"><div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" width="140"></div>
+            <div data-aos="zoom-in" data-aos-duration="3000" class="tooltip"><div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" width="140"></div>
                 <span class="tooltiptext">HTML5</span>
               </div>
-            <div class="tooltip"><div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width="140"></div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="tooltip"><div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width="140"></div>
                 <span class="tooltiptext">CSS3</span>
               </div>
-            <div class="tooltip"><div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width="140"></div>
+            <div data-aos="zoom-in" data-aos-duration="2000" class="tooltip"><div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" width="140"></div>
                 <span class="tooltiptext">Javascript</span>
               </div>
-            <div class="tooltip"><div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" width="140"></div>
+            <div data-aos="zoom-in" data-aos-duration="1500" class="tooltip"><div><img class="opacity-hover" src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" width="140"></div>
                 <span class="tooltiptext">Bootstrap</span>
               </div>
         </div>
         <div class="skills">
-            <div class="tooltip"><div><img class="opacity-hover" src="https://seeklogo.com/images/V/vuejs-logo-17D586B587-seeklogo.com.png" width="140"></div>
+            <div data-aos="zoom-in" data-aos-duration="3000" class="tooltip"><div><img class="opacity-hover" src="https://seeklogo.com/images/V/vuejs-logo-17D586B587-seeklogo.com.png" width="140"></div>
             <span class="tooltiptext">Vue.js</span>
           </div>
-            <div class="tooltip"><div><img class="opacity-hover" src="https://seeklogo.com/images/N/nuxt-logo-D5098E139E-seeklogo.com.png" width="140"></div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="tooltip"><div><img class="opacity-hover" src="https://seeklogo.com/images/N/nuxt-logo-D5098E139E-seeklogo.com.png" width="140"></div>
             <span class="tooltiptext">Nuxt.js</span>
           </div>
-            <div class="tooltip"><div><img class="opacity-hover" src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" width="100"></div>
+            <div data-aos="zoom-in" data-aos-duration="2000" class="tooltip"><div><img class="opacity-hover" src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" width="100"></div>
             <span class="tooltiptext">Vuetify</span>
           </div>
-          <div class="tooltip"><div><img class="opacity-hover" src="https://seeklogo.com/images/S/sass-logo-E41E7734A8-seeklogo.com.png" width="140"></div>
+          <div data-aos="zoom-in" data-aos-duration="1500" class="tooltip"><div><img class="opacity-hover" src="https://seeklogo.com/images/S/sass-logo-E41E7734A8-seeklogo.com.png" width="140"></div>
             <span class="tooltiptext">Sass</span>
           </div>
         </div>
@@ -164,7 +262,7 @@
     <div style="width: 100%; background-color: rgba(0, 0, 0, 0.39); height: 2px; margin-top: 3em;">.</div>
     <section class="sessao-5" id="contato">
         <h1>Contato</h1>
-        <div style="display: flex; justify-content: center; margin-top: 2em;">
+        <div data-aos="zoom-in" data-aos-duration="1000" style="display: flex; justify-content: center; margin-top: 2em;">
             <div class="contact">
                 <h2>Vamos trabalhar juntos?</h2>
                 <p>Entre em contato para mais detalhes</p>
@@ -216,5 +314,30 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+$("#trigger_id").leanModal({ top : 0, overlay : 1, closeButton: ".modal_close" });
+    </script>
 </body>
 </html>

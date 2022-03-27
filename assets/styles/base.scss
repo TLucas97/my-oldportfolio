@@ -104,6 +104,14 @@ header{
     }
 }
 
+.github2{
+    transition: .3s;
+}
+
+.github2:hover{
+    transform: scale(1.3);
+}
+
 .linkedin{
     background: #006eeb48;
     color: white;

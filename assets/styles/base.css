@@ -132,6 +132,16 @@ header .header-list a:hover {
   border: 2px solid white;
 }
 
+.github2 {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.github2:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 .linkedin {
   background: #006eeb48;
   color: white;

@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./assets/img/heart.png">
     <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/styles/hamburguer.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
   rel="stylesheet"
@@ -113,7 +114,8 @@
     </div>
     <header style="padding-top: 1.5em" id="header">
         <div style="margin-left: 4em">
-            <h1 class="animate__animated animate__fadeIn animate__delay-1s">Portfolio</h1>
+            <h1 class="animate__animated animate__fadeIn animate__delay-1s ls-dev">LS.Dev</h1>
+        </div>
         </div>
         <div style="margin-right: 4em">
             <ul class="header-list animate__animated animate__fadeIn animate__delay-1s">
@@ -139,6 +141,19 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu">
+            <div class="hamburger hamburger--spin" onclick="switchVision()">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+              <div id="mobile_menu" class="mobile-navbar">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#skills">Skill</a>
+                <a href="#contato">Contato</a>
+             </div>
+        </div>
     </header>
     <section id="inicio" class="sessao-1 animate__animated animate__fadeInDown">
         <div>
@@ -147,7 +162,6 @@
         <div style="text-align: center;">
             <h1>Olá, eu sou o Lucas Senna</h1>
             <h2>Desenvolvedor Front-end</h2>
-        </div>
         <div style="margin-top: 3em">
             <a target="_blank" href="https://www.linkedin.com/in/tarc%C3%ADsio-almeida-0a5577207/">
                 <button class="linkedin">Linkedin</button> 
@@ -310,6 +324,24 @@
         </div>
     </footer>
     <script>
+          // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+
+  function switchVision(){
+      let menuBar = document.getElementById("mobile_menu")
+      if (menuBar.style.opacity === "1"){
+          menuBar.style.opacity = "0"
+      } else {
+        menuBar.style.opacity = "1"
+      }
+  }
+
         AOS.init();
         const swiper = new Swiper('.swiper', {
   // Optional parameters

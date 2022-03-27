@@ -452,4 +452,62 @@ footer a, footer p {
     display: none;
   }
 }
+
+@media (max-width: 600px) {
+  .mobile-img {
+    width: 200px !important;
+  }
+  .mobile-title h1, .mobile-title h2 {
+    font-size: 1.8em !important;
+  }
+  .mobile-icons {
+    width: 100px !important;
+    margin-top: 1em;
+  }
+  .ethic-align {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mobile-about-img {
+    width: 300px !important;
+    margin-bottom: 1em;
+  }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .opacity-hover {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 380px) {
+  .mobile-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .linkedin {
+    margin-bottom: 2.6em !important;
+  }
+}
 /*# sourceMappingURL=base.css.map */
